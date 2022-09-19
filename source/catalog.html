@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <h1 class="visually-hidden" lang="en">Mishka</h1>
+    <!--Логотип в шапке-->
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <img class="logo__mobile" width="86" height="35" alt="Логотип «Мишка»." src="img/icon_logo_mobile.svg">
+            </picture>
+          </a>
+        </div>
+        <!--Навигация-->
+        <nav class="header__menu menu" id="main-nav">
+          <div class="menu__popover menu__popover--closed menu__popover--nodjs">
+            <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="menu__content-list">
+              <li class="menu__content-item">
+                <a class="menu__content-link">Каталог товаров</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="catalog">
+        <h2 class="catalog__title">
+          Каталог товаров
+        </h2>
+        <ul class="catalog__list">
+          <li class="catalog__item card">
+            <a class="card__link">
+              <h3 class="card__subtitle">
+                Зайчик-попрыгайчик
+              </h3>
+              <picture>
+                <img class="card__picture" width="260" height="195" alt="Вязаный зайчик." src="img/catalog/photo_rubbit.png">
+              </picture>
+            </a>
+            <p class="card__description">Рост 30 см, вес 200 г</p>
+            <p class="card__price">1 200 руб.</p>
+            <button class="card__buy" type="button">
+              <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z" fill="#000"/></svg>
+            </button>
+          </li>
+          <li class="catalog__item card">
+            <a class="card__link">
+              <h3 class="card__subtitle">
+                Корзинка для белья
+              </h3>
+              <picture>
+                <img class="card__picture" width="260" height="195" alt="Вязаная корзинка для белья." src="img/catalog/photo_basket.png">
+              </picture>
+            </a>
+            <p class="card__description">Диаметр 15 см, высота 10 см</p>
+            <p class="card__price">690 руб.</p>
+            <button class="card__buy" type="button">
+              <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z" fill="#000"/></svg>
+            </button>
+          </li>
+          <li class="catalog__item card">
+            <a class="card__link">
+              <h3 class="card__subtitle">
+                Большая корзинка для игрушек
+              </h3>
+              <picture>
+                <img class="card__picture" width="260" height="195" alt="Большая вязаная корзина с игрушками." src="img/catalog/photo_big-basket.png">
+              </picture>
+            </a>
+            <p class="card__description">Диаметр 30 см, высота 30 см</p>
+            <p class="card__price">1 500 руб.</p>
+            <button class="card__buy" type="button">
+              <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z" fill="#000"/></svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <video class="production__video" width="260" height="150" poster="img/video.png">
+          <source src="img/video.mp4" type='video/mp4'>
+        </video>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__link" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <!--Соц.сети-->
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link link socials__link--vk" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link socials__link--yotube" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link socials__link--telegram" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Разработчик-->
+        <div class="footer__logo-academy logo-academy">
+          <p class="footer__text">Разработано
+            <a class="logo-academy__link-academy logo-academy__link-academy--icon" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="logo-academy__icon" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34">
+                <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0zm11.6 25L13.5 31.96 1.77 25V14.94l11.68 6.92.02 1.25-8.02-4.74v1.22l8.04 4.81.02 1.29-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.22 6.04 3.58-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.64-6.96 11.8 6.83zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24z" fill="#666"/>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <h1 class="visually-hidden" lang="en">Mishka</h1>
+    <!--Логотип в шапке-->
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo logo">
+            <picture>
+              <img class="logo__mobile" width="86" height="35" alt="Логотип «Мишка»." src="img/icon_logo_mobile.svg">
+            </picture>
+          </a>
+        </div>
+        <!--Навигация-->
+        <nav class="header__menu menu" id="main-nav">
+          <div class="menu__popover menu__popover--closed menu__popover--nodjs">
+            <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="menu__content-list">
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--Разделы магазина-->
+      <section class="main-nav">
+        <h2 class="main-nav__title">
+          Милые штуки ручной работы для дома
+        </h2>
+        <picture>
+          <img class="main-nav__img" width="567" height="373" alt="Игрушечный домик с вязанными игрушками." src="img/hero-mobile.png">
+        </picture>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Предметы интерьера</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Детские игрушки</a>
+          </li>
+        </ul>
+      </section>
+      <!--Товар недели-->
+      <section class="promo">
+        <h2 class="promo__title">
+          Товар недели
+        </h2>
+        <h3 class="promo__subtitle">
+          Вязаные корзинки
+        </h3>
+        <p class="promo__text">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
+        </p>
+        <dl class="promo__features features">
+          <dt class="features__item">Цвет:</dt>
+          <dd class="features__item-content">тиффани/серый</dd>
+          <dt class="features__item">Диаметр:</dt>
+          <dd class="features__item-content">25 см</dd>
+          <dt class="features__item">Высота:</dt>
+          <dd class="features__item-content">15 см</dd>
+        </dl>
+        <picture>
+          <img class="promo__img" width="260" height="315" alt="Вязаные корзинки." src="img/triple_set.png">
+        </picture>
+        <p class="promo__price">Цена: 990 руб.</p>
+        <a class="promo__button button" href="#">Заказать</a>
+      </section>
+      <!--Описание магазина-->
+      <section class="about">
+        <h2 class="about__title">
+          Коротко о нас:
+        </h2>
+        <ul class="about__list">
+          <li class="about__item about__item-eco">Экологически чистые материалы</li>
+          <li class="about__item about__item-scandy">Скандинавский стиль по российской цене</li>
+          <li class="about__item about__item-like">Увеличивает лайки на фотографиях</li>
+          <li class="about__item about__item-hands">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item-national">Поддержка отечественного производителя</li>
+          <li class="about__item about__item-present">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <!--Отзывы-->
+      <section class="reviews">
+        <h2 class="reviews__title">
+          Отзывы
+        </h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <blockquote>
+              <p  class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <cite class="reviews__autor">
+                <span class="reviews__autor reviews__autor--bold">Анастасия Красильникова</span> @misssssiskras
+              </cite>
+            </blockquote>
+          </li>
+        </ul>
+        <a class="reviews__slider reviews__slider-prew" href="#" role="button" data-slide="prev">
+          <svg width="50" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z" fill="#000"/>
+          </svg>
+        </a>
+        <a class="reviews__slider reviews__slider-next" href="#" role="button" data-slide="next">
+          <svg width="50" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z" fill="#000"/>
+          </svg>
+        </a>
+        <a class="reviews__button">Написать</a>
+      </section>
+      <!--Контакты-->
+      <section class="feedback">
+        <h2 class="feedback__title">
+          Контакты
+        </h2>
+        <p class="feedback__contact">E-mail:</p>
+        <a class="feedback__contact-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <p class="feedback__contact">Адрес:</p>
+        <a class="feedback__contact-link" href="https://goo.gl/maps/kTTkqRSBT6dfaZkY8">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.32085871617598!3d59.938719169054046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1663338502072!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="feedback__contact-link feedback__contact-link--button" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <!--Соц.сети-->
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link link socials__link--vk" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link socials__link--yotube" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link socials__link--telegram" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Разработчик-->
+        <div class="footer__logo-academy logo-academy">
+          <p class="footer__text">Разработано
+            <a class="logo-academy__link-academy logo-academy__link-academy--icon" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="logo-academy__icon" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34">
+                <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0zm11.6 25L13.5 31.96 1.77 25V14.94l11.68 6.92.02 1.25-8.02-4.74v1.22l8.04 4.81.02 1.29-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.22 6.04 3.58-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.64-6.96 11.8 6.83zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24z" fill="#666"/>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

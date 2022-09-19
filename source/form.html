@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <h1 class="visually-hidden" lang="en">Mishka</h1>
+    <!--Логотип в шапке-->
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <img class="logo__mobile" width="86" height="35" alt="Логотип «Мишка»." src="img/icon_logo_mobile.svg">
+            </picture>
+          </a>
+        </div>
+        <!--Навигация-->
+        <nav class="header__menu menu" id="main-nav">
+          <div class="menu__popover menu__popover--closed menu__popover--nodjs">
+            <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="menu__content-list">
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link">Вязание на заказ</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="menu__content-item">
+                <a class="menu__content-link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="form">
+        <h2 class="form__title">Вязание на заказ</h2>
+        <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="form__filter filter" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="filter__radio">
+            <legend class="filter__radio-subtitle">Тип</legend>
+            <ul class="filter__radio-list">
+              <li class="filter__radio-item">
+                <label class="filter__radio-label control">
+                  <input class="visually-hidden control__field" type="radio" name="type" value="Аксессуар для интерьера" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="filter__radio-item">
+                <label class="filter__radio-label control">
+                  <input class="visually-hidden control__field" type="radio" name="type" value="Детская игрушка">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__checkbox">
+            <legend class="filter__checbox-subtitle">Цвет</legend>
+            <ul class="filter__checkbox-list">
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label checkbox">
+                  <input class="visually-hidden checkbox__field" type="checkbox" name="white" checked>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Белый</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label checkbox">
+                  <input class="visually-hidden checkbox__field" type="checkbox" name="grey" checked>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Серый</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label checkbox">
+                  <input class="visually-hidden checkbox__field" type="checkbox" name="tiffany">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Тиффани</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label checkbox">
+                  <input class="visually-hidden checkbox__field" type="checkbox" name="black">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Черный</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label checkbox">
+                  <input class="visually-hidden checkbox__field" type="checkbox" name="pink">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Розовый</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label checkbox">
+                  <input class="visually-hidden checkbox__field" type="checkbox" name="orange">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__client">
+            <legend class="filter__client-subtitle">ФИО</legend>
+            <div class="filter__client-wrapper">
+              <label class="filter__client-label" for="name">Имя:</label>
+              <input class="filter__client-field" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="filter__client-wrapper">
+              <label class="filter__client-label" for="surname">Фамилия:</label>
+              <input class="filter__client-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="filter__client-wrapper">
+              <label class="filter__client-label" for="patronymic">Отчество:</label>
+              <input class="filter__client-field" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+            </div>
+          </fieldset>
+          <fieldset class="filter__phone">
+            <legend class="filter__phone-subtitle">Тел</legend>
+            <div class="filter__phone-wrapper">
+              <label class="filter__phone-label" for="phone"></label>
+              <input class="filter__phone-field" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <span class="filter__phone-icon">
+                <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" fill="#000"><path d="M17.44 24h-1.11c-4.939-.593-8.568-2.864-11.189-5.728C2.521 15.408.403 11.753 0 6.716V5.333c.1-.888.504-1.481 1.109-2.074.605-.69 1.613-1.481 2.52-1.58.706 0 1.815.494 2.218 1.087.403.493.605 1.58.806 2.37.202.889.605 1.975.504 2.765-.201 1.186-1.814 1.68-2.217 2.568 1.612 3.655 4.133 6.42 7.56 8.198.806-.494 1.613-1.877 2.823-1.877.403 0 1.008.198 1.41.297.505.098.908.296 1.311.493.706.297 2.017.593 2.42 1.186.403.592.705 1.58.605 2.172-.303 1.284-2.42 2.667-3.63 3.062ZM12.6 1.481c5.948 0 10.888 4.741 10.888 10.667H25C25 5.432 19.456 0 12.6 0v1.481Z"/><path d="M12.6 9.185v1.58c.807 0 1.412.593 1.412 1.383h1.613c0-1.58-1.31-2.963-3.024-2.963ZM12.6 6.124c3.327 0 6.15 2.666 6.15 6.024h1.613c0-4.148-3.427-7.506-7.661-7.506v1.482H12.6Z"/></g></svg>
+              </span>
+            </div>
+          </fieldset>
+          <fieldset class="filter__email">
+            <legend class="filter__email-subtitle">E-mail</legend>
+            <div class="filter__contacts-wrapper filter__contacts-email">
+              <label class="filter__email-label" for="e-mail"></label>
+              <input class="filter__email-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+              <span class="filter__email-icon">
+                <svg width="32" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l7.8-5.9 4.4 3.3c.5.4 1.2.6 1.8.6.6 0 1.3-.2 1.8-.6l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2l-12.8 9.6Z" fill="#000"/></svg>
+              </span>
+            </div>
+          </fieldset>
+          <fieldset class="filter__other">
+            <legend class="filter__other-subtitle">Доп</legend>
+            <label class="filter__other-label" for="comment"></label>
+                <textarea class="filter__other-field" name="comment" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <p class="form__meta">*Поля обязательны для заполнения</p>
+          <button class="filter__button button" type="submit">
+            Отправить заказ
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <!--Соц.сети-->
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link link socials__link--vk" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link socials__link--yotube" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link socials__link--telegram" href="#">
+                <svg class="link__svg" width="28" height="22">
+                  <use href="img/sprite.svg#icon_telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Разработчик-->
+        <div class="footer__logo-academy logo-academy">
+          <p class="footer__text">Разработано
+            <a class="logo-academy__link-academy logo-academy__link-academy--icon" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="logo-academy__icon" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34">
+                <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0zm11.6 25L13.5 31.96 1.77 25V14.94l11.68 6.92.02 1.25-8.02-4.74v1.22l8.04 4.81.02 1.29-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.22 6.04 3.58-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.64-6.96 11.8 6.83zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24z" fill="#666"/>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
